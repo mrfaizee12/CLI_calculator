@@ -5,8 +5,8 @@ import inquirer from "inquirer";
 // asking questions from users through inquirer
 
 let answers = await inquirer.prompt([
-    {message: "Enter First Nmuber", type: "number", name: "firstNumber"},
-    {message: "Enter  Second Number", type: "number",name: "secondNumber"},
+    {message: "Enter your First Nmuber", type: "number", name: "firstNumber"},
+    {message: "Enter your  Second Number", type: "number",name: "secondNumber"},
     {
         message: "Select one of the Operator to perform Operations",
         type: "list",
@@ -31,3 +31,5 @@ else if(answers.operator === "Division"){
 } else {
     console.log("Please select invalid operator");
 }
+
+console.log("THE END");
